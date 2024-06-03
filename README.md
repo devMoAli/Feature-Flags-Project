@@ -6,7 +6,7 @@
 When you want to have centralised option to turn on or off a component or option for user so instead of re-build the code from scratch and re-deploy it you can have feature flag to enable or disable this component
 let’s say for example you have a coming events like special sale or Christmas sale or want to enable a Christmas banner component where discount should be applied on certain categories of products so you just make an API call to that feature flag to turn that Christmas discount component on so it’s sort of configuration you build and then it’s easy to use 
 another example you want to allow a feature to work on certain users depend on anything like a location for example so it’s sort of conditional feature applies on what you allow and be disabled on what you choose
- so we can say that feature flag is a tool that allow you to enable or disable a feature without modifying the source code or performing a new deployment
+so we can say that feature flag is a tool that allow you to enable or disable a feature without modifying the source code or performing a new deployment
 Other names for Feature Flags are Feature Toggles, Release Toggles, Feature Flippers, and Remote Configurations.
 
 
@@ -171,5 +171,7 @@ export const featureFlagsDataServiceCall = () => {
       }, 1000);
     });
   }; 
+
+  As mentioned we used in this project React Context as our State Management, If you been asked to implement this project without using any framework or state management system it will be in different repo with name Feature-Flags-JS-Only
 
 
