@@ -151,3 +151,25 @@ root.render(
 reportWebVitals();
 
 
+with that you can easily switch components On or Off means display or hide components based on true or false value from here
+
+featureFlagsDataServiceCall.js
+in here we need to config the components as key and value
+so this will be the key value pairs you will be receiving from the API with a function to config this service
+export const featureFlagsDataServiceCall = () => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve({
+          showDarkLightMode: true,
+          showTicTacToeBoard: true,
+          showAccordion: true,
+          showPopupModal: true,
+          showScrollProgress: true,
+          showSearchAutoComplete: true,
+          showStarRating: true,
+        });
+      }, 1000);
+    });
+  }; 
+
+
